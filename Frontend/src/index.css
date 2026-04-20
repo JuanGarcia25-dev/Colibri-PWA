@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  scrollbar-width: none;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+::selection {
+  background-color: #bbf7d0;
+  color: black;
+}
+
+@media (min-width: 700px) {
+  body:not(.admin-mode) {
+    margin: 0;
+    padding: 0;
+    background-color: #f79999;
+    background-image: url('../public/clb-logo.png'), url('../public/clb-logo.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: 650px auto, 550px auto;
+  }
+
+  body:not(.admin-mode) #root {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+body.home-theme-dark:not(.admin-mode) {
+  background-color: #0f172a;
+}
+
+body.home-theme-dark .home-screen {
+  color: #e5e7eb;
+}
+
+body.home-theme-dark .home-top-panel,
+body.home-theme-dark .home-bottom-panel,
+body.home-theme-dark .home-sheet,
+body.home-theme-dark .home-sidebar,
+body.home-theme-dark .home-sidebar-trigger {
+  background-color: #111827 !important;
+  color: #e5e7eb !important;
+}
+
+body.home-theme-dark .home-input,
+body.home-theme-dark .home-screen .bg-zinc-100,
+body.home-theme-dark .home-screen .bg-zinc-50 {
+  background-color: #1f2937 !important;
+  color: #e5e7eb !important;
+}
+
+body.home-theme-dark .home-screen .text-gray-800,
+body.home-theme-dark .home-screen .text-zinc-950,
+body.home-theme-dark .home-screen .text-zinc-900 {
+  color: #e5e7eb !important;
+}
+
+body.home-theme-dark .home-screen .text-gray-500,
+body.home-theme-dark .home-screen .text-zinc-400 {
+  color: #94a3b8 !important;
+}
+
+body.home-theme-dark .home-screen .border-t-2,
+body.home-theme-dark .home-screen .border-2,
+body.home-theme-dark .home-screen .border-zinc-100,
+body.home-theme-dark .home-screen .border-zinc-200 {
+  border-color: #334155 !important;
+}
+
+body.home-theme-dark .home-screen .bg-white {
+  background-color: #111827 !important;
+}
+
+body.home-theme-dark .sidebar-section-page {
+  background: #0b1220 !important;
+  color: #e5e7eb !important;
+}
+
+body.home-theme-dark .sidebar-section-page .bg-white,
+body.home-theme-dark .sidebar-section-page .bg-zinc-50,
+body.home-theme-dark .sidebar-section-page .bg-zinc-100,
+body.home-theme-dark .sidebar-section-page .bg-zinc-200 {
+  background-color: #111827 !important;
+  color: #e5e7eb !important;
+}
+
+body.home-theme-dark .sidebar-section-page .text-zinc-400,
+body.home-theme-dark .sidebar-section-page .text-zinc-500,
+body.home-theme-dark .sidebar-section-page .text-zinc-600,
+body.home-theme-dark .sidebar-section-page .text-gray-500,
+body.home-theme-dark .sidebar-section-page .text-gray-600,
+body.home-theme-dark .sidebar-section-page .text-gray-800,
+body.home-theme-dark .sidebar-section-page .text-slate-500,
+body.home-theme-dark .sidebar-section-page .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+body.home-theme-dark .sidebar-section-page .border,
+body.home-theme-dark .sidebar-section-page .border-2,
+body.home-theme-dark .sidebar-section-page .border-t-2,
+body.home-theme-dark .sidebar-section-page .border-zinc-100,
+body.home-theme-dark .sidebar-section-page .border-zinc-200,
+body.home-theme-dark .sidebar-section-page .border-slate-100,
+body.home-theme-dark .sidebar-section-page .border-slate-200 {
+  border-color: #334155 !important;
+}
+
+body.home-theme-dark .sidebar-section-page input,
+body.home-theme-dark .sidebar-section-page select,
+body.home-theme-dark .sidebar-section-page textarea {
+  background-color: #111827 !important;
+  color: #e5e7eb !important;
+  border-color: #334155 !important;
+}
+
+body.home-theme-dark .sidebar-section-page button:not(.bg-red-600):not(.bg-blue-600):not(.bg-green-600) {
+  color: #e5e7eb;
+}
